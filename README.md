@@ -27,7 +27,7 @@ Ikuti langkah-langkah di bawah ini untuk menjalankan alat ini di lingkungan loka
 ### 1️⃣ Kloning Repositori
 Clone proyek ini ke mesin lokal Anda:
 ```bash
-git clone https://github.com/abyfromh/unlockkit.git
+git clone https://github.com/abyfromheaven/Unlockit.git
 cd unlockkit
 ```
 
@@ -90,7 +90,7 @@ Skrip ini bekerja dengan mencoba mengekstrak file ZIP menggunakan setiap baris k
 ---
 
 ## 👨‍💻 Kontribusi & Kredit
-Dibuat dengan ❤️ oleh **Muhammad Abiyan Hafidz** sebagai bagian dari tugas:
+Dibuat sebagai bagian dari tugas:
 **Bootcamp Online Cyber Security - ID-Networkers**
 
 ---
