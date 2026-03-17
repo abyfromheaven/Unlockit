@@ -2,7 +2,7 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.x-blue.svg?style=flat-square&logo=python)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Bootcamp](https://img.shields.io/badge/Bootcamp-ID--Networkers-red?style=flat-square)](https://id-networkers.com/)
+[![Bootcamp](https://img.shields.io/badge/Bootcamp-ID--Networkers-red?style=flat-square)](https://https://www.idn.id//)
 [![Cyber Security](https://img.shields.io/badge/Focus-Cyber%20Security-black?style=flat-square&logo=target)](https://id-networkers.com/)
 
 **UnlockKit** adalah toolkit berbasis Python yang ringan dan edukatif, dirancang untuk membuka proteksi file yang dikunci dengan password menggunakan metode brute force. Proyek ini merupakan bagian dari tugas **Bootcamp Online Cyber Security di ID-Networkers**.
@@ -27,7 +27,7 @@ Ikuti langkah-langkah di bawah ini untuk menjalankan alat ini di lingkungan loka
 ### 1️⃣ Kloning Repositori
 Clone proyek ini ke mesin lokal Anda:
 ```bash
-git clone https://github.com/username/unlockkit.git
+git clone https://github.com/abyfromh/unlockkit.git
 cd unlockkit
 ```
 
