@@ -46,7 +46,6 @@ source venv/bin/activate
 ### 3️⃣ Instalasi Dependensi
 Saat ini, proyek hanya menggunakan library standar Python (`zipfile`), sehingga tidak ada instalasi tambahan yang diperlukan. Namun, jika di masa depan ada update:
 ```bash
-# Jika ada file requirements.txt
 pip install -r requirements.txt
 ```
 
