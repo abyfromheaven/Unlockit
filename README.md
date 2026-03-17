@@ -1,99 +1,99 @@
-
 # 🔓 UnlockKit - Python Brute Force Toolkit
 
-**UnlockKit** adalah toolkit berbasis Python yang ringan dan edukatif, dirancang untuk membuka proteksi file yang dikunci dengan password menggunakan metode brute force. Versi awal mendukung cracking file ZIP dan akan dikembangkan untuk mendukung format lain seperti RAR, PDF, dan lainnya.
+[![Python Version](https://img.shields.io/badge/python-3.x-blue.svg?style=flat-square&logo=python)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Bootcamp](https://img.shields.io/badge/Bootcamp-ID--Networkers-red?style=flat-square)](https://id-networkers.com/)
+[![Cyber Security](https://img.shields.io/badge/Focus-Cyber%20Security-black?style=flat-square&logo=target)](https://id-networkers.com/)
+
+**UnlockKit** adalah toolkit berbasis Python yang ringan dan edukatif, dirancang untuk membuka proteksi file yang dikunci dengan password menggunakan metode brute force. Proyek ini merupakan bagian dari tugas **Bootcamp Online Cyber Security di ID-Networkers**.
 
 ---
 
-## 🧩 Fitur Utama
+## 🎯 Deskripsi Proyek
+Proyek ini dibuat sebagai bentuk implementasi praktis dari materi keamanan siber, khususnya dalam memahami mekanisme *password cracking* dan *brute force* pada file terkompresi. Versi awal mendukung cracking file **ZIP** dan akan terus dikembangkan untuk mendukung format lain.
 
-- 🚀 Brute force file ZIP menggunakan wordlist
-- 📖 Input interaktif untuk file ZIP dan wordlist
-- 🧱 Penanganan error yang lengkap dan aman
-- 🔧 Mudah dimodifikasi dan dikembangkan untuk jenis file lain
+## 🚀 Fitur Utama
+- ⚡ **Fast & Lightweight:** Menggunakan modul bawaan Python.
+- 📂 **ZIP Cracking:** Brute force file ZIP menggunakan wordlist kustom.
+- 🛠️ **Error Handling:** Penanganan error yang lengkap untuk file rusak atau tidak ditemukan.
+- 📖 **Interactive CLI:** Antarmuka baris perintah yang mudah digunakan bagi pemula.
 
 ---
 
-## 🧪 Contoh Penggunaan
+## 🛠️ Instalasi & Penggunaan
 
-### 1. Siapkan:
-- File ZIP yang diproteksi, misal `protected.zip`
-- File wordlist, misal `wordlists/example.txt`
+Ikuti langkah-langkah di bawah ini untuk menjalankan alat ini di lingkungan lokal Anda:
 
-### 2. Jalankan:
+### 1️⃣ Kloning Repositori
+Clone proyek ini ke mesin lokal Anda:
+```bash
+git clone https://github.com/username/unlockkit.git
+cd unlockkit
+```
+
+### 2️⃣ Persiapan Lingkungan (Opsional namun Disarankan)
+Gunakan virtual environment untuk menjaga sistem Anda tetap bersih:
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# Linux/macOS
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3️⃣ Instalasi Dependensi
+Saat ini, proyek hanya menggunakan library standar Python (`zipfile`), sehingga tidak ada instalasi tambahan yang diperlukan. Namun, jika di masa depan ada update:
+```bash
+# Jika ada file requirements.txt
+pip install -r requirements.txt
+```
+
+### 4️⃣ Cara Menjalankan
+Pastikan Anda memiliki file ZIP target dan file wordlist (seperti `rockyou.txt` atau daftar password lainnya).
 ```bash
 python3 main.py
 ```
 
-### 3. Input di terminal:
-```
-Masukkan path ke file ZIP: protected.zip
-Masukkan path ke file wordlist: wordlists/example.txt
-```
-
-Jika password ditemukan, akan muncul:
-```
-[+] Kata sandi ditemukan: [password]
-```
-
-Jika tidak ditemukan:
-```
-[-] Kata sandi tidak ditemukan dalam wordlist.
+### 5️⃣ Contoh Input di Terminal
+```text
+=== Alat Brute Force Kata Sandi ZIP ===
+Masukkan path ke file ZIP: data_rahasia.zip
+Masukkan path ke file wordlist: wordlist.txt
+Mulai brute force pada "data_rahasia.zip" menggunakan wordlist "wordlist.txt"...
 ```
 
 ---
 
-## 🛠️ Penjelasan Script: `main.py`
+## 🔍 Detail Teknis: `main.py`
+Skrip ini bekerja dengan mencoba mengekstrak file ZIP menggunakan setiap baris kata sandi yang ada di dalam wordlist yang diberikan.
 
-File utama `main.py` terdiri dari dua fungsi:
-
-### 🔐 `brute_force_zip(zip_file_path, wordlist_file_path)`
-Melakukan brute force terhadap file ZIP dengan mencoba semua kata dalam wordlist.
-
-### 🧭 `main()`
-Menjalankan interaksi CLI dan memulai proses brute force.
+- **`brute_force_zip()`**: Logika utama untuk iterasi wordlist dan percobaan dekripsi.
+- **`main()`**: Handler input pengguna dan manajemen alur eksekusi.
 
 ---
 
-## 📌 Catatan
-
-- ❗ **Hanya digunakan untuk pembelajaran atau pengujian keamanan milik pribadi.**
-- 🚫 Jangan gunakan tool ini untuk aktivitas ilegal.
-- 🧠 Sangat cocok untuk pemula Python & Cyber Security.
-
----
-
-## 📈 Roadmap Pengembangan
-
-- [ ] Tambahkan dukungan file RAR (`rarfile`)
-- [ ] Tambahkan dukungan file PDF (`pikepdf`)
-- [ ] GUI mode dengan Tkinter atau CustomTkinter
-- [ ] Web UI dengan Flask
-- [ ] Mode multi-threaded untuk kecepatan
+## 🚧 Roadmap Pengembangan
+- [ ] 📦 Tambahkan dukungan file **RAR** (`rarfile`)
+- [ ] 📄 Tambahkan dukungan file **PDF** (`pikepdf`)
+- [ ] 🖥️ Antarmuka GUI (CustomTkinter)
+- [ ] 🧵 Implementasi Multi-threading untuk kecepatan maksimal
+- [ ] 🌐 Web Interface (Flask/FastAPI)
 
 ---
 
-## 📦 Requirements
-
-- Python 3.x
-- Tidak memerlukan library eksternal (untuk `zipcracker.py`)
-
----
-
-## 👨‍💻 Kontribusi
-
-Pull request, issue, dan saran sangat diterima!  
-Tool ini dirancang sebagai tempat belajar dan eksplorasi dunia *brute force* dan *file cracking* yang aman.
+## ⚠️ Disclaimer
+> [!IMPORTANT]
+> Proyek ini dibuat **HANYA UNTUK TUJUAN EDUKASI**. Jangan gunakan alat ini untuk mengakses file atau sistem tanpa izin yang sah. Penulis tidak bertanggung jawab atas penyalahgunaan alat ini.
 
 ---
 
-## 📝 Lisensi
+## 👨‍💻 Kontribusi & Kredit
+Dibuat dengan ❤️ oleh **Muhammad Abiyan Hafidz** sebagai bagian dari tugas:
+**Bootcamp Online Cyber Security - ID-Networkers**
 
+---
+
+## 📜 Lisensi
 Proyek ini dilisensikan di bawah [MIT License](https://opensource.org/licenses/MIT).
-
----
-
-## 🙏 Kredit
-
-Dibuat oleh: **Muhammad Abiyan Hafidz**  
-Sebagai bagian dari eksplorasi dunia **Cyber Security & Python Tools**.
